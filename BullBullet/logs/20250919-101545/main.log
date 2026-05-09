@@ -1,0 +1,6 @@
+2025-09-19 10:15:45,831 - main - INFO - Starting quadruped robot simulation
+2025-09-19 10:15:45,834 - main - INFO - Adjusted config file path to 'configs\config.yaml'
+2025-09-19 10:15:45,835 - main - INFO - Loading from config file 'configs\config.yaml'
+2025-09-19 10:15:45,835 - main - INFO - Running in normal simulation mode
+2025-09-19 10:17:08,778 - main - INFO - Simulation execution complete
+2025-09-19 10:17:08,779 - main - INFO - Program terminating

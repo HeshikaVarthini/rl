@@ -1,0 +1,50 @@
+# Quadruped Robot Reinforcement Learning Configuration File
+
+# Robot Related Settings
+robot:
+  urdf_path: models/urdf/svdog2_2_description/svdog2_2.urdf
+  position: [0, 0, 0.08] # Initial position [x, y, z]
+  rotation: [0, 0, 135] # Initial orientation (Euler angles) [roll, pitch, yaw]
+  max_force: 5.0 # Maximum torque of actuators
+
+# Environment Related Settings
+environment:
+  use_gui: true # Whether to use GUI
+  camera_follow: true # Whether camera follows the robot
+  gravity: [0, 0, -9.8] # Gravity vector [x, y, z]
+  timestep: 0.00416667 # Simulation timestep (1/240)
+
+# LiDAR Settings
+lidar:
+  enabled: true # Whether to enable LiDAR
+  num_rays: 36 # Number of rays
+  ray_length: 2.0 # Maximum length of rays
+  ray_start_length: 0.05 # Starting distance of rays
+  ray_color: [0, 1, 0] # Normal ray color [R, G, B]
+  ray_hit_color: [1, 0, 0] # Collision ray color [R, G, B]
+
+# Gait Generator Settings
+gait:
+  amplitude: 0.20 # Joint angle amplitude
+  frequency: 1.2 # Walking cycle frequency
+  pattern: trot # Gait pattern (trot, walk, bound)
+  turn_direction: 0 # Turn direction (-1.0: left, 0: straight, 1.0: right)
+  turn_intensity: 0 # Turn intensity (0.0 - 1.0)
+
+# Obstacle Settings
+obstacles:
+  enabled: true # Whether to enable obstacles
+  course_type: random # Course type (simple, dense, random)
+  length: 8.0 # Course length
+
+# Goal Settings
+goal:
+  enabled: true # Whether to enable goal
+  position: [2.0, 0, 0] # Goal position [x, y, z]
+  radius: 0.4 # Goal radius
+  color: [0.0, 0.8, 0.0, 0.5] # Goal color [R, G, B, A]
+
+# Simulation Settings
+simulation:
+  max_steps: 3000 # Maximum number of simulation steps
+  debug_interval: 100 # Debug information display interval

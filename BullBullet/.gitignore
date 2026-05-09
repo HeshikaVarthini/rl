@@ -1,0 +1,17 @@
+# Byte-compiled Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Output
+models/
+results/
+
+# Record
+log
