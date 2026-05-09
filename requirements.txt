@@ -1,0 +1,7 @@
+# Core RL stack (PyBullet + Stable-Baselines3)
+gym>=0.21,<0.26
+numpy>=1.21
+pybullet>=3.2.5
+stable-baselines3[extra]>=2.0.0
+matplotlib>=3.5
+torch>=1.13
